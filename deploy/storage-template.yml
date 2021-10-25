@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: My API Gateway and Lambda function
+
+Resources:
+  S3Storage:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: swagger-golang-api-example
+      AccessControl: Private
